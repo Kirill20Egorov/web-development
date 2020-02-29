@@ -4,7 +4,7 @@
         return isset($_GET[$password]) ? (string)$_GET[$password] : null;
     }
     header("Content-Type: text/plain");
-    $password = getGetParameter('password');
+    $password = getGETParameter('password');
     $count = 0;
     $memory = ' ';
     $numeral = 0;
