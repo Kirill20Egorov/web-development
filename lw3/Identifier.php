@@ -1,23 +1,22 @@
 <?php
-    function getGETParameter(string $identifier):?String
+    function getGETParameter(string $identifier): ?string
     {
         return isset($_GET[$identifier]) ? (string)$_GET[$identifier] : null;
     }
     header("Content-Type: text/plain");
     $identifier = getGETParameter('identifier');
-    $flag = true;
-    if($i == 0 & (($identifier[$i] <= 'z' & $identifier[$i] >= 'a')|($identifier[$i] <= 'Z' & $identifier >= 'A')) & $identifier <> null)  //проверка на первый символ
+    $flag = true; 
+    //проверка на первый символ
+    if ($i == 0 & (($identifier[$i] <= 'z' & $identifier[$i] >= 'a') | ($identifier[$i] <= 'Z' & $identifier >= 'A')) & $identifier <> null) 
     {
         for ($i = 1; $i <= strlen($identifier); $i++ )
         {
-           if ((($identifier[$i] >= '!' & $identifier[$i] <= '/' )|($identifier[$i] >= ':' & $identifier[$i] <= '`') | ($identifier[$i] == '#')))
+           if ((($identifier[$i] >= '!' & $identifier[$i] <= '/' ) | ($identifier[$i] >= ':' & $identifier[$i] <= '`') | ($identifier[$i] == '#')))
            {
                $flag = false;
                echo 'No. Недопустимый символ';
-               $i = strlen($identifier) + 1;
-               
+               $i = strlen($identifier) + 1; 
            }
-
         }
         if ($flag == true)
         {
@@ -26,7 +25,7 @@
     }
     else
     {
-        if($identifier == null)
+        if ($identifier == null)
         {
             echo 'No';
         }
