@@ -1,5 +1,5 @@
 <?php
-    function getGETParameter(string $identifier): ?string
+    function getGetParameter(string $identifier): ?string
     {
         return isset($_GET[$identifier]) ? (string)$_GET[$identifier] : null;
     }
