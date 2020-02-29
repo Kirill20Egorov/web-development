@@ -4,7 +4,7 @@
         return isset($_GET[$identifier]) ? (string)$_GET[$identifier] : null;
     }
     header("Content-Type: text/plain");
-    $identifier = getGETParameter('identifier');
+    $identifier = getGetParameter('identifier');
     $flag = true; 
     //проверка на первый символ
     if ($i == 0 & (($identifier[$i] <= 'z' & $identifier[$i] >= 'a') | ($identifier[$i] <= 'Z' & $identifier >= 'A')) & $identifier <> null) 
