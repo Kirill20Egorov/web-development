@@ -1,10 +1,10 @@
 <?php
-    function getGETParameter(string $password):?String
+    function getGetParameter(string $password):?String
     {
         return isset($_GET[$password]) ? (string)$_GET[$password] : null;
     }
     header("Content-Type: text/plain");
-    $password = getGETParameter('password');
+    $password = getGetParameter('password');
     $count = 0;
     $memory = ' ';
     $numeral = 0;
