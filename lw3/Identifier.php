@@ -11,6 +11,7 @@
     {
         for ($i = 1; $i <= strlen($identifier); $i++ )
         {
+           //проверка на несоответствующие символы
            if ((($identifier[$i] >= '!' & $identifier[$i] <= '/' ) | ($identifier[$i] >= ':' & $identifier[$i] <= '`') | ($identifier[$i] == '#')))
            {
                $flag = false;
