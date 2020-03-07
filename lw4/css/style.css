@@ -1,0 +1,35 @@
+body
+{
+ background:url("https://i.pinimg.com/originals/f8/10/38/f8103819da656ccffb9dd9906832a251.jpg") center no-repeat;    
+}
+
+.main
+{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #a8aeae;
+    height: 500px;
+}
+
+.image
+{
+    border-radius: 5px;
+    float: left;
+    width: 30%;
+    height: 500px;
+    width: 340px;
+    margin-right: 20px;
+    
+}
+.name_text
+{
+    text-align: center;
+}
+
+.text
+{
+    font: 110% serif;
+}
