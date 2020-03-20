@@ -5,20 +5,20 @@
     }
     header("Content-Type: text/plain");
     $text = getGETParameter('text');
-    $flag = false;
+    $spaceflag = false;
     for ($i = 0; $i <= strlen($text); $i++)
     {
         if ($text[$i] <> ' ') 
         {
             echo $text[$i];
-            $flag = true;
+            $spaceflag = true;
         }
         else
         {
-            if ($flag == true) 
+            if ($spaceflag == true) 
             {
                 echo $text[$i];
-                $flag = false;
+                $spaceflag = false;
             }
         }
     }
