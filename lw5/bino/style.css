@@ -3,15 +3,11 @@
     margin: 0;
     padding: 0;
 }
-body
-{
-
-}
 .nav_container
 {
     width: 100%;
     max-width: 1200px;
-    height: 200px;
+    height: 300px;
     margin: 0 auto;
 }   
 .container
@@ -28,9 +24,8 @@ body
     width: 100%;
     background: url("images/bg.jpg") no-repeat;
     background-size: cover;
-    background-size: 100%;
+    -webkit-background-size: 100%;
     margin-bottom: auto;
-    height: 1000px;
 }
 .header_logo
 {
@@ -116,8 +111,8 @@ body
 .line
 {
     margin: 0 auto;
-    width: 60px;
-    height: 6px;
+    width: 75px;
+    height: 4px;
     background-color: #fff;
     border-radius: 20px;
 }
@@ -169,7 +164,6 @@ body
 .info_block
 {
     display: flex;
-    width: 1200px;
     margin: 0 auto;
     justify-content: center;
 }
@@ -210,7 +204,6 @@ body
 }
 .header_info:hover
 {
-
    color: #e74c3c;    
 }
 .border_img:hover
@@ -220,7 +213,7 @@ body
   -moz-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
   -o-transform: rotate(30deg);
-  transform: rotate(30deg);    
+  transform: rotate(30deg); 
 }
 .text_info
 {
@@ -330,7 +323,7 @@ body
 .form_block
 {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     padding-top: 40px;
     margin: 0 auto;
     padding-bottom: 100px;
@@ -414,7 +407,6 @@ body
 }
 .footer_bg
 {
-    height: 478px;
     background: url("images/bg4.png") no-repeat; 
     background-size: 100%;   
     display: flex;
@@ -459,7 +451,7 @@ body
 }
 .down
 {
-    margin-top: -2px;
+    margin-top: -22px;
     display: block;
     width: 100%;
     height: 60px;
@@ -472,10 +464,5 @@ body
     text-decoration: none;
     margin: 0 10px;
     font-family: "Open Sans";
-    transition: color .2s linear;
     position: relative;   
-}
-.log_link:after
-{
-    overlay:;
 }
