@@ -1,0 +1,481 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+
+}
+.nav_container
+{
+    width: 100%;
+    max-width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}   
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header
+{
+    width: 100%;
+    background: url("images/bg.jpg") no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    margin-bottom: auto;
+    height: 1000px;
+}
+.header_logo
+{
+    margin: 0 -20px;  
+}
+.header_inner
+{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.intro
+{
+    margin: 0;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav_link
+{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: "Open Sans";
+    transition: color .2s linear;
+    position: relative;
+}
+.nav_link:after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+    background-color: #e74c3c;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.nav_link:hover
+{
+    color: #e74c3c;
+    font-weight: 500;
+}
+.nav_link:hover:after
+{
+    display: block;
+}
+.intro_title
+{ 
+    font-size: 72px;    
+    letter-spacing: 7px;
+    color: #f4f5f9;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 90px;
+}
+.intro_suptitle
+{
+    margin: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #f4f5f9;
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    text-align: center;
+}
+.intro_subtitle
+{
+    display: flex;
+    margin: 20px auto;
+    width: 200px;
+}
+.cir
+{
+   margin-left: 5px;
+   margin-right: 5px;
+}
+.line
+{
+    margin: 0 auto;
+    width: 60px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.text_subtitle
+{
+    margin: 20px auto;
+    width: 480px;
+    text-align: center;
+    height: 122px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #cbc6c0;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+.buttons
+{
+    display: flex;
+    margin: 20px auto 365px;
+    width: 500px;
+}
+.button
+{
+    border: solid;
+    width: 200px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    font: 16px/50px "Georgia";    
+}
+.button:hover
+{
+    border: none;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #e74c3c;
+    font-weight: 500;
+    font: 16px/50px "Georgia";    
+}
+.yak
+{
+    display: flex;
+    margin: -45px auto 90px;
+    width: 50px;
+}
+.info_block
+{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.element
+{
+    width: 300px;
+    font-family: "Georgia";
+    font-size: 16px;
+}
+.img_elm
+{
+    margin: auto auto;
+}
+.border_img
+{
+    border: 3px solid #6a6a6a;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto 20px auto;
+    text-decoration: none;
+    align-items: center; 
+    display: flex;
+    justify-content: center;
+
+}
+.shape_img
+{
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+.header_info
+{
+   margin: 0 auto 20px;
+   text-align: center;
+   font: 18px "Open Sans" 600;
+   color: #6a6a6a;
+}
+.header_info:hover
+{
+
+   color: #e74c3c;    
+}
+.border_img:hover
+{
+   border-color: #e74c3c;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);    
+}
+.text_info
+{
+    display: flex;
+    margin: 10px auto;
+    width: 255px;
+    height: 70px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #999999;
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    text-align: center;
+}
+.services
+{
+    margin: 5% auto 0;
+    width: 100%;
+    background: url("images/bg2.png") no-repeat;
+    -webkit-background-size: 100%;  
+}
+.header_services
+{ 
+    display: flex;
+    font-size: 36px;
+    margin: 0 40px;
+    padding: 200px 0 100px 0;
+    letter-spacing: 4px;
+    color: #f4f5f9;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+}
+.imghead_serv
+{
+    padding: 0 40px;
+    width: 12px;
+    height: 60px;
+}
+.elementsserv
+{
+    margin: 0 30px 60px;
+}
+.textserv
+{
+    margin-right: 20px;
+    width: 587px;
+    float: left;
+    height: 74px;
+    font-size: 14px;
+    line-height: 29px;
+    color: #999999;
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    text-align: right;
+}
+.header_textserv
+{
+    width: 587px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 29px;
+    color: #e74c3c;
+    font-family: "Open Sans";
+    font-weight: 600;
+    text-align: right;
+}
+.form
+{
+    width: 100%;
+    background-color: #f4f5f9;
+}
+.header_form
+{
+    padding: 5% 0 20px;
+    font-size: 36px;
+    line-height: 20px;
+    color: #6a6a6a;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    text-align: center;
+    filter: drop-shadow(0px 1px 0px #ffffff);
+}
+.subheader_form
+{
+    height: 54px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #999999;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+}
+.line2
+{
+    margin: 0 auto;
+    width: 70px;
+    height: 3px;
+    background-color: #999;
+    border-radius: 20px;
+}
+.cir2
+{
+   margin-left: 20px;
+   margin-right: 20px;
+}
+.form_block
+{
+    display: flex;
+    width: 1200px;
+    padding-top: 40px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    justify-content: space-between;
+}
+.info_form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;       
+    background-color: #fff; 
+    width: 470px;
+    border-radius: 5px;
+}
+.header_form-info
+{
+    margin-left: 87px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #e74e3e;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.form-info
+{
+    width: 23vh;
+    margin-left: 87px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #999999;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+.back_form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #fff; 
+    width: 57%;
+    border-radius: 5px;
+    padding-top: 97px;
+}
+.form-label
+{
+    font-size: 14px;
+    margin-left: 87px;
+    line-height: 24px;
+    color: #999999;
+    font-family: "Open Sans";
+    font-weight: 600;
+
+}
+.form-input
+{
+    margin-left: 87px;
+    border: none;
+    width: 400px;
+    box-shadow: 0 6px 5px -5px rgba(0, 0, 0, .1);
+    margin-bottom: 30px;
+}
+.form-submit
+{
+    margin-left: 87px;
+    width: 150px;
+    border: none;
+    height: 35px;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+    background: #e74c3c;
+    margin-bottom: 40px;
+}
+.footer
+{
+    width: 100%;
+}
+.footer_bg
+{
+    height: 478px;
+    background: url("images/bg4.png") no-repeat; 
+    background-size: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.h-footer
+{
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: lighter;
+    margin-bottom: 20px
+}
+.text-f
+{
+    height: 74px;;
+    font-size: 30px;
+    line-height: 29px;
+    color: #fff;
+    font-family: "Source Sans Pro";
+    margin-bottom: 20px;
+}
+.button_start
+{
+    margin-top: 40px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e74c3c;
+    text-align: center;
+    border-radius: 2px;
+    font: 16px/50px "Georgia";    
+}
+.button_footer
+{
+    margin: -30px 60px;
+    float: right;
+}
+.down
+{
+    margin-top: -2px;
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: #202020;
+}
+.log_link
+{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: "Open Sans";
+    transition: color .2s linear;
+    position: relative;   
+}
+.log_link:after
+{
+    overlay:;
+}

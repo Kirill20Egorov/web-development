@@ -1,0 +1,143 @@
+.main
+{
+    width: 1000px;
+    margin: auto;
+}
+
+.images_block
+{
+    height: 361px;
+}
+
+.image
+{
+    float: left;
+    width: 33%;
+}
+
+.image img
+{
+    width: 100%;
+    height: 350px;
+}
+
+.div_quote
+{ 
+    float: right;  
+    width: 66%; 
+}
+
+.quotes img
+{
+    width: 20%;
+    padding-left: 50px;
+    padding-top: 51px;
+}
+
+.quote
+{
+    padding-left: 70px;
+    width: 550px;
+    color: #848484;
+    margin-top: -22px;
+    font: Italic 28px/42px "Georgia";
+}
+
+
+.lists
+{
+    float: left;
+    width: 33%;
+    padding-top: 11px;
+}
+
+.title_cars
+{    
+    color: #15a98c;  
+    font: bold 24px/32px "Open Sans";
+    margin-bottom: 13px;
+}
+
+
+.lists_cars
+{
+    font-size: 19px;
+    line-height: 36px;
+    color: #555555;
+    font-family: "Georgia";
+    padding-bottom: 17px;
+    padding-left: 21px;
+}
+
+.lists_games
+{
+    font-size: 19px "Georgia";
+    line-height: 36px;
+    color: #555555;
+    padding-bottom: 17px;
+    padding-left: 18px;
+}
+
+.main_info_text
+{
+    padding-right: 49px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.name_text
+{
+    color: #333333;
+    font: bold 46px/46px "Open Sans", sans serif;
+}
+
+.underline
+{
+    width: 60px;
+    height: 6px;
+    background-color: #15a98c;
+    border-radius: 20px;
+    margin-bottom: 42px;
+}
+
+.text_main
+{
+    width: 561px;
+    color: #555555;
+    font: 19px/32px "Georgia";
+}
+
+.author
+{       
+    padding-left: 112px;
+    font: bold 16px "Open Sans"; ;
+}
+
+.link
+{
+    padding-top: 20px;
+    width: 562px;    
+    color: #15a98b;
+    font: 19px/32px "Georgia";
+    text-decoration: none;
+}
+
+.title_hobbies
+{   
+    color: #333333;
+    padding-top: 6px;
+    margin-bottom: -5px;
+    font: 36px/42px "Open Sans"
+}
+
+.write_me
+{
+    text-decoration: underline;
+}
+
+.title_games
+{    
+    color: #15a98c;  
+    margin-bottom: -7px;
+    font: bold 24px/32px "Open Sans";
+}
