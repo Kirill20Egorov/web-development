@@ -3,10 +3,6 @@
     margin: 0;
     padding: 0;
 }
-body
-{
-
-}
 .nav_container
 {
     width: 100%;
@@ -414,7 +410,7 @@ body
 }
 .footer_bg
 {
-    height: 478px;
+    height: 470px;
     background: url("images/bg4.png") no-repeat; 
     background-size: 100%;   
     display: flex;
@@ -472,10 +468,5 @@ body
     text-decoration: none;
     margin: 0 10px;
     font-family: "Open Sans";
-    transition: color .2s linear;
     position: relative;   
-}
-.log_link:after
-{
-    overlay:;
 }
