@@ -407,6 +407,10 @@
 }
 .footer_bg
 {
+<<<<<<< HEAD
+=======
+    height: 470px;
+>>>>>>> e57649041d7c455f13219d2c8f47ef31cada9574
     background: url("images/bg4.png") no-repeat; 
     background-size: 100%;   
     display: flex;
