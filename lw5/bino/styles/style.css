@@ -250,9 +250,28 @@
     margin: 5% auto 0;
     width: 100%;
     background: url("bg-s/bg_services.png") no-repeat;
-    -webkit-background-size: 100%;  
+    -webkit-background-size: 100%; 
 }
-
+.main_services
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.images_to_serv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%; 
+}
+.img_serv
+{
+    margin: auto 0;
+}
 .header_services
 { 
     display: flex;
@@ -294,6 +313,26 @@
     font: 600 18px "Open Sans", "Verdana";
     line-height: 29px;
     color: #e74c3c;
+    text-align: right;
+}
+
+.info_services
+{
+    text-align: right;
+    margin: 0 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;        
+    width: 470px;
+}
+.services_info 
+{
+    text-align: right;
+    float: right;
+    font: 400 14px "Source Sans Pro";
+    line-height: 29px;
+    color: #999999;
     text-align: right;
 }
 
