@@ -25,7 +25,7 @@
 .header
 {
     width: 100%;
-    background: url("bg-s/header_bg.jpg") no-repeat;
+    background: url("C:/Users/User/Desktop/web dev/web-development/lw5/bino/images/header_bg.jpg") no-repeat;
     background-size: cover;
     -webkit-background-size: 100%;
     margin-bottom: auto;
@@ -175,12 +175,15 @@
 {
     display: flex;
     margin: 0 auto;
-    justify-content: center;
+    max-width: 1200px;
+    padding-top: 40px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    justify-content: space-between;
 }
 
 .element
 {
-    width: 350px;
     font: 16px "Source Sans Pro", "Arial";
 }
 
@@ -236,7 +239,7 @@
 {
     display: flex;
     margin: 10px auto;
-    width: 255px;
+    width: 80%;
     height: 70px;
     font: 300 12px "Source Sans Pro", "Arial";
     letter-spacing: 1px;
@@ -249,7 +252,7 @@
 {
     margin: 5% auto 0;
     width: 100%;
-    background: url("bg-s/bg_services.png") no-repeat;
+    background: url("C:/Users/User/Desktop/web dev/web-development/lw5/bino/images//bg_services.png") no-repeat;
     -webkit-background-size: 100%; 
 }
 .main_services
@@ -266,7 +269,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 40%; 
+    width: 860px; 
 }
 .img_serv
 {
@@ -324,7 +327,6 @@
     flex-direction: column;
     justify-content: center;
     text-align: right;        
-    width: 470px;
 }
 .services_info 
 {
@@ -466,7 +468,7 @@
 
 .footer_bg
 {
-    background: url("bg-s//bg_foot.png") no-repeat; 
+    background: url("C:/Users/User/Desktop/web dev/web-development/lw5/bino/images/bg_foot.png") no-repeat; 
     -webkit-background-size: 100%;   
     display: flex;
     flex-direction: column;
@@ -484,7 +486,6 @@
 
 .text_f
 {
-    height: 74px;;
     font: 300 30px "Source Sans Pro", "Arial";
     line-height: 29px;
     color: #fff;
