@@ -25,7 +25,7 @@ function isPrimeNumber(num){
 		}
 	    if (isPrime){
 		  console.log(num[index] + ' is prime number')
-		  }
+        }
 		else{
 		  console.log(num[index] + ' is not prime number')
 		}
