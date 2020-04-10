@@ -25,7 +25,7 @@
 .header
 {
     width: 100%;
-    background: url("C:/Users/User/Desktop/web dev/web-development/lw5/bino/images/header_bg.jpg") no-repeat;
+    background: url("../images/header_bg.jpg") no-repeat;
     background-size: cover;
     -webkit-background-size: 100%;
     margin-bottom: auto;
@@ -252,7 +252,7 @@
 {
     margin: 5% auto 0;
     width: 100%;
-    background: url("C:/Users/User/Desktop/web dev/web-development/lw5/bino/images//bg_services.png") no-repeat;
+    background: url("../images/bg_services.png") no-repeat;
     -webkit-background-size: 100%; 
 }
 .main_services
@@ -468,7 +468,7 @@
 
 .footer_bg
 {
-    background: url("C:/Users/User/Desktop/web dev/web-development/lw5/bino/images/bg_foot.png") no-repeat; 
+    background: url("../images/bg_foot.png") no-repeat; 
     -webkit-background-size: 100%;   
     display: flex;
     flex-direction: column;
