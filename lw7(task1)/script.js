@@ -16,5 +16,6 @@ function isPrimeNumber(num){
       else{
         console.log(num[index] + ' is not prime number')
       }
+    }
   }
 }
