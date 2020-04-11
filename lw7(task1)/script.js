@@ -7,8 +7,7 @@ function isPrimeNumber(num){
   }
   if (typeof num == 'object'){
     for (let index = 0; index < num.length; index++){
-      if (((num[index] % 2 == 0) || (num[index] % 3 == 0)) && 
-      !((num[index] == 2) || (num[index] == 3))){
+      if (((num[index] % 2 == 0) || (num[index] % 3 == 0)) && !((num[index] == 2) || (num[index] == 3))){
         isPrime = false;
       }
       if (isPrime){
