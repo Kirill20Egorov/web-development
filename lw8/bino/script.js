@@ -1,9 +1,17 @@
 
 var currentSlide = 1;
 var slide = document.getElementsByClassName("slide");
-function changeSlide(n){
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+prev.onclick = function(){
+  changeSlide(-1);    
+} 
+next.onclick = function(){
+  changeSlide(+1);    
+} 
+slide[currentSlide-1].style.display = "block";  
+function changeSlide(n){  
   currentSlide += n;
-  console.log(currentSlide);
   if(currentSlide > slide.length){
   	currentSlide = 1;
   }

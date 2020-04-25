@@ -7,7 +7,7 @@
    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
    <link rel='stylesheet' href="styles/reset.css"> 
-   <script src="script.js"> </script>
+   <script src="script.js" defer> </script>
 <body>
   <header>
   	<div class = "nav_container">
@@ -26,117 +26,106 @@
         </nav>            
       </div>
       <div class = "buttons_slides">
-    	  <a class = "prev" onclick="changeSlide(-1)">
+    	  <a class = "prev" id="prev">
       	  <img src="images/back_button.png" alt = "button">
         </a>
-        <a class = "next" onclick="changeSlide(1)">
+        <a class = "next" id="next">
       	  <img src="images/next_button.png" alt = "button">
         </a>
       </div>
     </div>
-  	<div class = "slide" style="display: block;">
-  	  <div class = "background_1">
+  	<div class = "slide">
+  	  <div class = "background bg_first">
         <div class = "intro">
-          <div class ="container">
-            <div class = "111e">      
-              <p class ="intro_suptitle">Our Clients Are Our First   Priority
-              </p>
-              <h1 class ="intro_title">WELCOME TO BINO</h1> 
-              <div class="intro_subtitle">
-                <div class ="line"></div>
-                <img src ="images/red_ellipse.png" class="cir" alt = "circle">
-                <div class = "line"></div>    
-              </div>     
-              <p class = text_subtitle> 
-                Lorem Ipsum is simply dummy text of  the printing and typesettin. 
-                Lorem lpsum has been the industy's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-              </p>
-              <div class = "buttons">
-                <a href = "*" class = "button">GET STARTED NOW</a>
-                <a href = "*" class = "button">LEARN MORE</a>
-              </div>
-            </div>            
+          <div class ="container">   
+            <p class ="intro_suptitle">
+              Our Clients Are Our First   Priority
+            </p>
+            <h1 class ="intro_title">WELCOME TO BINO</h1> 
+            <div class="intro_subtitle">
+              <div class ="line"></div>
+              <img src ="images/red_ellipse.png" class="cir" alt = "circle">
+              <div class = "line"></div>    
+            </div>     
+            <p class = text_subtitle> 
+              Lorem Ipsum is simply dummy text of  the printing and typesettin. Lorem lpsum has been the industy's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            </p>
+            <div class = "buttons">
+              <a href = "*" class = "button">GET STARTED NOW</a>
+              <a href = "*" class = "button">LEARN MORE</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  	<div class = "slide" style="display: none;">
-  	  <div class = "background_2">
+  	<div class = "slide">
+  	  <div class = "background bg_second">
         <div class = "intro">
-          <div class ="container">
-            <div class = "1111">      
-              <p class ="intro_suptitle">2-ой
-              </p>
-              <h1 class ="intro_title">2-ой</h1> 
-              <div class="intro_subtitle">
-                <div class ="line"></div>
-                <img src ="images/red_ellipse.png" class="cir" alt = "red_ellipse">
-                <div class = "line"></div>    
-              </div>     
-              <p class = text_subtitle> Lorem Slide Slide Slide Slide Slide Slide 
-                Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide 
-                Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide 
-                Slide Slide Slide Slide Slide Slide Slide   Slide Slide.
-              </p>
-              <div class = "buttons">
-                <a href = "*" class = "button">GET STARTED NOW</a>
-                <a href = "*" class = "button">LEARN MORE</a>
-              </div>
-            </div>            
+          <div class ="container">   
+            <p class ="intro_suptitle">
+              2-ой
+            </p>
+            <h1 class ="intro_title">2-ой</h1> 
+            <div class="intro_subtitle">
+              <div class ="line"></div>
+              <img src ="images/red_ellipse.png" class="cir" alt = "red_ellipse">
+              <div class = "line"></div>    
+            </div>     
+            <p class = text_subtitle> 
+              Lorem Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide Slide   Slide Slide.
+            </p>
+            <div class = "buttons">
+              <a href = "*" class = "button">GET STARTED NOW</a>
+              <a href = "*" class = "button">LEARN MORE</a>
+            </div>          
           </div>
         </div>
       </div>
     </div>
-    <div class = "slide" style="display: none;">
-      <div class = "background_3">
+    <div class = "slide">
+      <div class = "background bg_third">
         <div class = "intro">
-          <div class ="container">
-            <div class = "111">      
-              <p class ="intro_suptitle"> II
-              </p>
-              <h1 class ="intro_title"> III Welcome III</h1> 
-              <div class="intro_subtitle">
-                <div class ="line"></div>
-                <img src ="images/red_ellipse.png" class="cir" alt = "red_ellipse">
-               <div class = "line"></div>    
-              </div>     
-              <p class = text_subtitle> Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino 
-                Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bin
-                o Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino.
-              </p>
-              <div class = "buttons">
-                <a href = "*" class = "button">GET STARTED3 NOW</a>
-                <a href = "*" class = "button">LEARN MORE3</a>
-              </div>
-            </div>            
+          <div class ="container">  
+            <p class ="intro_suptitle"> 
+              II
+            </p>
+            <h1 class ="intro_title"> III Welcome III</h1> 
+            <div class="intro_subtitle">
+              <div class ="line"></div>
+              <img src ="images/red_ellipse.png" class="cir" alt = "red_ellipse">
+              <div class = "line"></div>    
+            </div>     
+            <p class = text_subtitle> 
+              Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino Bino.
+            </p>
+            <div class = "buttons">
+              <a href = "*" class = "button">GET STARTED3 NOW</a>
+              <a href = "*" class = "button">LEARN MORE3</a>
+            </div>         
           </div>
         </div>
       </div>
     </div>
-    <div class = "slide" style="display: none;">
-      <div class = "background_4">
+    <div class = "slide">
+      <div class = "background bg_fourth">
         <div class = "intro">
-          <div class ="container">
-            <div class = "111e">      
-              <p class ="intro_suptitle">Slide 4 ___ Slide 4
-              </p>
-              <h1 class ="intro_title">4 WELCOME TO BINO 4</h1> 
-              <div class="intro_subtitle">
-                <div class ="line"></div>
-                <img src ="images/red_ellipse.png" class="cir" alt = "red_ellipse">
-                <div class = "line"></div>    
-              </div>     
-              <p class = text_subtitle> Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem IpsumLorem Lorem Ipsum Lorem Ipsum Lorem 
-                Ipsum Lorem Ipsum Lorem Ipsum.
-              </p>
-              <div class = "buttons">
-                <a href = "*" class = "button">GET STARTED3 NOW</a>
-                <a href = "*" class = "button">LEARN MORE 3</a>
-              </div>
-            </div>            
+          <div class ="container">      
+            <p class ="intro_suptitle">
+              Slide 4 ___ Slide 4
+            </p>
+            <h1 class ="intro_title">4 WELCOME TO BINO 4</h1> 
+            <div class="intro_subtitle">
+              <div class ="line"></div>
+              <img src ="images/red_ellipse.png" class="cir" alt = "red_ellipse">
+              <div class = "line"></div>    
+            </div>     
+            <p class = text_subtitle> 
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum.
+            </p>
+            <div class = "buttons">
+              <a href = "*" class = "button">GET STARTED3 NOW</a>
+              <a href = "*" class = "button">LEARN MORE 3</a>
+            </div>           
           </div>
         </div>
       </div>
