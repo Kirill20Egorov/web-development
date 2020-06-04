@@ -4,8 +4,8 @@ SELECT
 	full_name,
     age
 FROM
-    students
+    student s
 JOIN
-    groups_student ON students.student_group_id = groups_student.id
+    `group` g ON s.group_id = g.group_id
 WHERE
-    name_group = 'ПС'
+    name = 'ПС'

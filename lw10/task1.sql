@@ -1,9 +1,9 @@
 USE
-    unversity;
+	university;
 SELECT
-    fullname
+    full_name
 FROM
-    students
+    student 
 WHERE 
     age = 19;
     

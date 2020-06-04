@@ -3,13 +3,13 @@ USE
 SELECT
 	full_name,
     age,
-    name_group,
-    faculty
+    g.name,
+    f.name
 FROM
-    students
+    student s 
 JOIN
-    groups_students ON students.student_group_id = groups_students.id
+    `group` g ON s.group_id = g.group_id
 JOIN
-    facultys ON groups_students.faculty_id = facultys.id
+    faculty f ON g.faculty_id = f.faculty_id
 WHERE
     full_name = 'Егоров Кирилл'
