@@ -5,8 +5,15 @@ function getGetParameter(string $text):?string
 }
 header("Content-Type: text/plain");
 $email = getGetParameter('email');
-$user = file('data/' . $email. ".txt");
-foreach ($user as $lineNum => $currentLine) 
+if (file_exists('data/' . $email. ".txt"))
 {
-    echo $currentLine;
+	$user = file('data/' . $email. ".txt");
+	foreach ($user as $lineNum => $currentLine) 
+    {
+        echo $currentLine;
+    }
+}
+else
+{
+	echo 'File does not exist';
 }
