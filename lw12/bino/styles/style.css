@@ -477,7 +477,7 @@
     resize: none;
     width: 70%;
     margin-left: 87px;
-    font: 400 18px "Open Sans", "Verdana";
+    font: 400 17px "Open Sans", "Verdana";
     border: none;
     color: #999999;
     box-shadow: 0 6px 5px -5px rgba(0, 0, 0, .1);
@@ -552,7 +552,6 @@
 .img_button_footer
 {
     float: right;
-    width: 10%;
 }
 
 .down
@@ -675,16 +674,20 @@
     .h_footer
     {
         font: 400 24px "Open Sans", "Verdana";
+        width: 90%;
+        margin: 0 auto 18px;
     }   
 
     .text_f
     {
+        margin: auto;
         font: 300 24px "Source Sans Pro", "Arial";
+        width: 90%;
     }    
 
     .button_start
     {
-        margin: 2% auto;
+        margin: 4% auto 3px;;
     }
 }
 @media screen and (max-width: 780px)
@@ -751,6 +754,11 @@
 	{
  	   background-image: url("../images/bg_slide1_low.jpg");
 	}
+
+    .header_services
+    { 
+        margin: 10% 45% 35px 38%;
+    }
 
     .info_form
     {   
@@ -854,14 +862,23 @@
     .button_start
     {
         border: none;
-        width: 40%;
-        margin: 5% auto;
+        width: 170px;
+        margin: 5% auto 8px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         text-decoration: none;
         color: #fff;
         background-color: #e74c3c;
         text-align: center;
         border-radius: 2px;
         font: 78%/50px "Open Sans", "Verdana";
+    }
+
+    .img_button_footer
+    {
+        width: 10%;
     }
 }
 
