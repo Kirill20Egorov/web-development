@@ -42,7 +42,7 @@
 
 .header_logo
 {
-    margin: 100px 20px;   
+    margin: 100px 10%;   
     position: absolute;
 }
 
@@ -583,6 +583,14 @@
 	margin: 125px 0px;
 	float: right;
 	display: none;
+}
+
+@media screen and (max-width: 980px)
+{
+    .header_logo
+    {
+        margin: 100px 20px;
+    }
 }
 
 @media screen and (max-width: 920px)
