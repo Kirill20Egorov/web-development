@@ -33,7 +33,10 @@ if ($email != null)
             fwrite($recordFile, 'subject: ' . $subject . PHP_EOL);
             fwrite($recordFile, 'message: ' . $message . PHP_EOL);
             fclose($recordFile);
+            echo $info;
             echo 'Form Submitted Succesfully';
+            require_once('form.php');
+
         }
     }
 }
