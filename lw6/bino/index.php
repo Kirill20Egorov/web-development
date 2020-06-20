@@ -149,7 +149,35 @@
       </div>
     </div>
   </article>
-  <?php include 'form.php' ?>
+  <form method="POST" action = "action.php">
+    <div class = "form">
+      <h2 class = "header_form"> KEEP IN TOUCH </h2>
+      <p class = "subheader_form">
+        Nullam sit amet odio eu est aliquet euismod a a urna. 
+        Proin eu  urna 
+      </p>
+      <div class="intro_subtitle">
+        <div class ="line2"></div>
+          <img alt = "ellipse" src ="images/red_ellipse.png" class="cir2">
+        <div class = "line2"></div>    
+      </div>
+      <div class = "form_block">
+        <div class = "info_form">
+          <h3 class ="header_form_info"> OUR ADRESS </h3>
+          <p class="form_info"> House #13, Streat road, Sydney  2310 Australia </p>
+          <h3 class ="header_form_info"> CALL US </h3>
+          <p class="form_info"> + 880 168 109 1425 </p>
+          <p class = "form_info"> + 0216809142 </p>
+          <h3 class ="header_form_info"> EMAIL US </h3>
+          <p class="form_info"> contactus@email.com </p>
+        </div>
+        <div class ="back_form">
+          <?php include 'form.php' ?>
+          <input class="form_submit" name="enter" type = "submit" value = "SEND MESSAGE"> 
+        </div>
+      </div>
+    </div>
+  </form>
   <footer class = "footer">
     <div class = "footer_bg">
       <div class = "h_footer">

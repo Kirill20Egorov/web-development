@@ -43,13 +43,22 @@ function sendRequest() {
     }) 
 }
 
+function initializeFields(inputFields)
+{
+	for (i = 0; i < inputFields.length; i++)
+    {
+        inputFields[i].style.boxShadow = "0 6px 5px -5px rgba(0, 0, 0, .1)";
+    }
+}
+
 function handleFields(userData, correctData)
 {
-    var messageInput = document.getElementsByClassName('message_input');
     var inputFields = document.getElementsByClassName('form_input');
+    var messageInput = document.getElementsByClassName('message_input');
     var i = 0;
     messageInput[0].style.display = "none";
     correctData = true;
+    initializeFields(inputFields);
     for (let key in userData) 
     {
         if (userData[key] == 'red')
@@ -65,10 +74,7 @@ function handleFields(userData, correctData)
     {
         messageInput[1].style.display = "none";
         messageInput[0].style.display = "block";
-        for (i = 0; i < inputFields.length; i++)
-        {
-            inputFields[i].style.boxShadow = "0 6px 5px -5px rgba(0, 0, 0, .1)";
-        }
+        initializeFields(inputFields);
     }
 }
 

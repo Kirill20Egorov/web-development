@@ -5,6 +5,7 @@ function getPostParameter(string $text):?string
 }
 
 handleUserData();
+
 function checkEmail($email)
 {
     return (filter_var($email, FILTER_VALIDATE_EMAIL) != '');  
@@ -60,6 +61,7 @@ function handleUserData()
             $checkData = false;
         }
     }
+    
     if ($checkData != false)
     {
         $formValidArr = [                                                                   
