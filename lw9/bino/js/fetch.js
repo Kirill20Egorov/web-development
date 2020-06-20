@@ -45,7 +45,7 @@ function sendRequest() {
 
 function initializeFields(inputFields)
 {
-	for (i = 0; i < inputFields.length; i++)
+    for (i = 0; i < inputFields.length; i++)
     {
         inputFields[i].style.boxShadow = "0 6px 5px -5px rgba(0, 0, 0, .1)";
     }
