@@ -39,7 +39,7 @@
           <label for="subject" class="form_label">Subject</label>
           <input type="text" name="subject" class = "form_input" value = "<?php echo $subject ?>" >
           <label for="message" class="form_label">Message</label>
-          <input name="message" cols="10" rows="6" class = "form_input" value = "<?php echo $message ?>" ></input>        
+          <textarea name="message" cols="10" rows="6" class = "form_input" ><?php echo $message ?> </textarea>        
           <input class="form_submit" name="enter" type = "submit" value = "SEND MESSAGE"> 
         </div>
       </div>
