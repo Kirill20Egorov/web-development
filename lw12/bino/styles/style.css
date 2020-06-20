@@ -198,8 +198,7 @@
 
 .img_elm
 {
-    margin: auto auto;
-      transition: transform 2s;
+    transition: transform 2s;
 }
 
 .border_img
