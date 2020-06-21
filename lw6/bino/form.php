@@ -10,7 +10,7 @@
   </head>
   <body>
     <form method="POST" action = "action.php">
-  	  <div class = "back_form">
+      <div class = "back_form">
         <label for="name" class="form_label">Name</label>
         <input type="text" name="name" value = "<?php echo $name ?>" class = "form_input">
         <label for="email" class="form_label">Email</label>
