@@ -10,7 +10,6 @@ async function postRequest(submitEvent)
     {
         const validResult = await sendRequest();
         let correctData;
-        console.log(validResult);
         if (validResult != null) 
         {
             handleFields(validResult, correctData);
@@ -43,38 +42,59 @@ function sendRequest() {
     }) 
 }
 
-function initializeFields(inputFields)
+function initializeFields(userData)
 {
-    for (i = 0; i < inputFields.length; i++)
+	for (let key in userData)
     {
-        inputFields[i].style.boxShadow = "0 6px 5px -5px rgba(0, 0, 0, .1)";
+        if (key != 'status')
+        {
+            changeClassName(key, 'form_input_error', 'form_input');
+        }
     }
 }
 
+function changeClassName(key, removedClass, addedClass) 
+{
+    var classList = document.getElementById(`${key}`).classList;
+    if (classList.contains(removedClass)) 
+    {  
+        classList.remove(removedClass); 
+        classList.add(addedClass);
+    }
+}
+
+function changeMessage(i, removedClass, addedClass)
+{
+    var classList = document.getElementById(`${key}`).classList;
+    if (classList.contains(removedClass)) 
+    {  
+        classList.remove(removedClass); 
+        classList.add(addedClass);
+    }
+}    
 function handleFields(userData, correctData)
 {
-    var inputFields = document.getElementsByClassName('form_input');
-    var messageInput = document.getElementsByClassName('message_input');
-    var i = 0;
-    messageInput[0].style.display = "none";
+    let codesErrors = [2, 4, 6, 8];   
     correctData = true;
-    initializeFields(inputFields);
+    initializeFields(userData);
     for (let key in userData) 
     {
-        if (userData[key] == 'red')
+        for (let i = 0; i < codesErrors.length; i++)
         {
-            correctData = false;
-            inputFields[i].style.boxShadow = "0 6px 5px -5px red";
-            messageInput[1].style.display = "block";
+            if (userData[key] == codesErrors[i])
+            {
+                correctData = false;
+                changeClassName(key, 'form_input', 'form_input_error');
+                changeClassName(!correctData, 'message_input', 'message_input_empty');
+                changeClassName(correctData, 'message_input_empty', 'message_input');
+            }
         }
-        i++;
     }
-    console.log(correctData);
     if (correctData == true)
     {
-        messageInput[1].style.display = "none";
-        messageInput[0].style.display = "block";
-        initializeFields(inputFields);
+        changeClassName(!correctData, 'message_input', 'message_input_empty');
+        changeClassName(correctData, 'message_input_empty', 'message_input');
+        initializeFields(userData);
     }
 }
 

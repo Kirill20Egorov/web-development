@@ -33,10 +33,17 @@
     justify-content: space-between;
 }
 
-.message_input
+.message_input_empty
 {
     margin: -5px 230px 30px 0px;
     display: none;
+    width: 164px
+}
+
+.message_input
+{
+    margin: -5px 230px 30px 0px;
+    display: block;
     width: 164px
 }
 
@@ -484,6 +491,14 @@
     border: none;
     width: 400px;
     box-shadow: 0 6px 5px -5px rgba(0, 0, 0, .1);
+    margin-bottom: 30px;
+}
+
+.form_input_error
+{
+    margin-left: 87px;
+    width: 400px;
+    box-shadow:  0 6px 5px -5px red;
     margin-bottom: 30px;
 }
 

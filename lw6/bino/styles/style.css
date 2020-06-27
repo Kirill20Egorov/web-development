@@ -445,12 +445,22 @@
     color: #999999;
 }
 
-.back_form
+.form_fields
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    background-color: #fff; 
+    border-radius: 5px;
+    padding: 97px 120px 0 0;
+}
+
+.back_form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #fff; 
     width: 57%;
     border-radius: 5px;

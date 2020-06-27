@@ -171,7 +171,7 @@
           <h3 class ="header_form_info"> EMAIL US </h3>
           <p class="form_info"> contactus@email.com </p>
         </div>
-        <div class ="back_form">
+        <div class ="form_fields">
           <?php include 'form.php' ?>
           <input class="form_submit" name="enter" type = "submit" value = "SEND MESSAGE"> 
         </div>

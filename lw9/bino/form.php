@@ -22,17 +22,17 @@
         </div>
         <div class ="back_form">
           <label for="name" class="form_label">Name</label>
-          <input type="text" name="name" class = "form_input">
+          <input type="text" id='name' name="name" class = "form_input">
           <label for="email" class="form_label">Email</label>
-          <input type="text" name="email" class = "form_input">
+          <input type="text" id='email' name="email" class = "form_input">
           <label for="subject" class="form_label">Subject</label>
-          <input type="text" name="subject" class = "form_input">
+          <input type="text" id='subject' name="subject" class = "form_input">
           <label for="message" class="form_label">Message</label>
-          <textarea name="message" cols="10" rows="6" class = "form_input"></textarea>     
+          <textarea name="message" id='message' cols="10" rows="6" class = "form_input"></textarea>     
           <div class = "form_down">  
             <input class="form_submit" name="enter" type = "submit" value = "SEND MESSAGE"> 
-            <img class = "message_input" src = "images/correct_input.jpg">
-            <img class = "message_input" src = "images/error_input.jpg">
+            <img id = 'true' class = "message_input_empty" src = "images/correct_input.jpg">
+            <img id = 'false' class = "message_input_empty" src = "images/error_input.jpg">
           </div>
         </div>
       </div>

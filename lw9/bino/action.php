@@ -24,7 +24,6 @@ function checkText($text)
 function handleUserData() 
 {      
     $checkData = true;
-    $colored = 'red';
     $email = getPostParameter('email');
     $name = getPostParameter('name');
     $subject = getPostParameter('subject');
@@ -37,28 +36,33 @@ function handleUserData()
         'status' => '',
     ];
 
+    $codesErrors = array(2, 4, 6, 8);
+
     if (!checkEmail($email))
     {
-        $formValidArr['email'] = $colored;
+        $formValidArr['email'] = 2;
     }     
     if (!checkName($name))
     {
-        $formValidArr['name'] = $colored;
+        $formValidArr['name'] = 4;
     }
     if (!checkText($message))
     {
-        $formValidArr['message'] = $colored;
+        $formValidArr['message'] = 6;
     }  
     if (!checkText($subject))
     {
-        $formValidArr['subject']  = $colored;
+        $formValidArr['subject']  = 8;
     } 
     
     foreach ($formValidArr as $key) 
     {
-        if ($key == "red")
+        foreach ($codesErrors as $codeError)
         {
-            $checkData = false;
+            if ($key = $codeError)
+            {
+                $checkData = false;
+            }
         }
     }
     
