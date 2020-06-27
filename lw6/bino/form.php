@@ -12,13 +12,13 @@
     <form method="POST" action = "action.php">
       <div class = "back_form">
         <label for="name" class="form_label">Name</label>
-        <input type="text" name="name" value = "<?php echo $name ?>" class = "form_input">
+        <input type="text" name="name" value = "<?php if($success){echo $name;}?>" class = "form_input">
         <label for="email" class="form_label">Email</label>
-        <input type="text" name="email" value = "<?php echo $email ?>"  class = "form_input">
+        <input type="text" name="email" value = "<?php if($success){echo $email;} ?>"  class = "form_input">
         <label for="subject" class="form_label">Subject</label>
-        <input type="text" name="subject" class = "form_input" value = "<?php echo $subject ?>" >
+        <input type="text" name="subject" class = "form_input" value = "<?php if($success){echo $subject;} ?>" >
         <label for="message" class="form_label">Message</label>
-        <textarea name="message" cols="10" rows="6" class = "form_input" ><?php echo $message ?> </textarea>    
+        <textarea name="message" cols="10" rows="6" class = "form_input" ><?php if($success){echo $message;} ?> </textarea>    
       </div>
     </form>
   </body>

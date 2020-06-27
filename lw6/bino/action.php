@@ -38,6 +38,7 @@ function writeToFile($checkData, $email, $subject, $message, $name)
         fwrite($recordFile, 'subject: ' . $subject . PHP_EOL);
         fwrite($recordFile, 'message: ' . $message . PHP_EOL);
         fclose($recordFile);
+        $success = true;
         require_once('form.php');
     }  
 }
@@ -55,14 +56,19 @@ function checkFile($recordFile, $checkData, $email, $subject, $message, $name)
     }    
 }
 
-if ($email != null)
+function checkEmail($email)
+{
+    return (filter_var($email, FILTER_VALIDATE_EMAIL) != '');  
+}
+
+if (checkEmail($email))
 {
     checkEmptyFields($subject, $message, $name, $checkData);
     checkFile($recordFile, $checkData, $email, $subject, $message, $name);
 }
 else
 {
-    echo 'Error. Write email';
+    echo 'Error. Uncorrect email.';
 }
 
   
